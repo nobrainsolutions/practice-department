@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "db220ae9-8619-49f9-9c78-6d32a5f0d81a",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employees By Department",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "AuthToken",
+						"value": "token",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/employees/CSE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"CSE"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Department Count By Gender",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "AuthToken",
+						"value": "token",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/employees?gender=M",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "M"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
